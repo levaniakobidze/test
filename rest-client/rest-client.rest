@@ -1,0 +1,9 @@
+POST http://localhost:3001/doctors HTTP/1.1
+content-type: application/json
+
+{
+    "img":"",
+    "name": "Name",
+    "lastName": "Lastname",
+    "category": "Surgeon"
+}
