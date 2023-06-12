@@ -1,4 +1,4 @@
-POST http://localhost:3001/doctors HTTP/1.1
+DELETE  http://localhost:3001/doctors/64874b054ffa0c047bf36fa8 HTTP/1.1
 content-type: application/json
 
 {
