@@ -1,10 +1,22 @@
 const express = require("express");
 const doctorController = require("./controllers/doctorController");
-
+const clinicInfoController = require("./controllers/clinicInfoController");
 const app = express();
 const port = 3001;
 
 app.use(express.json());
+//clinic info API
+app.get("/info", clinicInfoController.getClinicInfo);
+
+app.get("/info/:id", clinicInfoController.getClinicInfoById);
+
+app.post("/info", clinicInfoController.createClinicInfo);
+
+app.put("/info/:id", clinicInfoController.updateClinicInfo);
+
+app.delete("/info/:id", clinicInfoController.deleteClinicInfo);
+
+//doctors API
 
 app.get("/doctors", doctorController.getDoctors);
 

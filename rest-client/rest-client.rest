@@ -1,8 +1,10 @@
-DELETE  http://localhost:3001/doctors/64874b054ffa0c047bf36fa8 HTTP/1.1
+POST  http://localhost:3001/info HTTP/1.1
 content-type: application/json
 
 {
-  
-    "name": "Name",
-    "specialization" : "fkjasbfas"
+  "name": "Eyeline",
+  "email":"email@mail.com",
+  "address": "Address",
+  "phonenumber": 5242342,
+  "workinghours":"from 08:00 to 22:00"
 }
